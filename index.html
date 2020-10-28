@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Bola-Ku</title>
+  <meta name="description" content="infofootball"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="apple-touch-icon" href="/maskable_icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#7cb342"/>
+</head>
+<body class="grey lighten-2">
+
+  <!-- Navigasi -->
+    <nav class="green darken-3" role="navigation">
+      <div class="container">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo" id="logo-container">Bola-Ku</a>
+        <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+
+        <ul class="topnav right hide-on-med-and-down"></ul>
+        <ul class="sidenav" id="nav-mobile"></ul>
+      </div>
+      </div>
+    </nav>
+  <!-- Akhir Navigasi -->
+<div class="content" style="display: none;">
+<!-- SLider -->
+  <div class="slider">
+  <ul class="slides">
+    <li>
+      <img src="aset/slider.jpg" alt="gambar_slider1">
+    </li>
+    <li>
+      <img src="aset/slider2.jpg" alt="gambar_slider2">
+    </li>
+  </ul>
+</div>
+<!-- Akhir Slider -->
+
+<div class="container" id="body-content"></div>
+
+<!-- Parallax -->
+<div class="parallax-container" style="height: 300px;">
+  <div class="parallax"><img src="aset/parallax.jpg" alt="gambar_parallax"></div>
+</div>
+<!--akhir Parallax -->
+
+<!-- Footer -->
+<footer class="page-footer light-green darken-3">
+<div class="container">
+  <div class="row">
+      <div class="col s12 m6">
+        <h5>Bola Ku</h5>
+        <P>Bola Ku adalah website PWA penyedia informasi sepakbola yang menampilkan team, jadwal pertandingan dan klasemen.</P>
+      </div>
+      <div class="col s12 m6">
+            <h5>Alamat</h5>  
+            <ul>
+                <li>Bola Ku</li>
+                <li>Jl. Palem No.12 RT:03 RW:15, Desa Negla, Brebes</li>
+                <li>Central Java - Indonesia</li>
+            </ul> 
+      </div>
+    </div>
+</div>
+
+
+<div class="footer-copyright  green darken-3">
+  <div class="container footer">
+      <p style="color: white"><i class="tiny material-icons">copyright</i>Copyright 2020 Bola-Ku</p>
+  </div>
+</div>
+</footer>
+<!-- Akhir footer -->
+</div>
+
+
+<center>
+<div class="preloader-wrapper big active" style="display: block;">
+      <div class="spinner-layer spinner-green-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+</div></center>
+
+
+  <script type="text/javascript" src="https://unpkg.com/snarkdown@1.0.2/dist/snarkdown.umd.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/idb.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/register_sw.js"></script>
+
+    <script>
+      window.onload = function () {
+        setTimeout(function () {
+          document.querySelector(".content").style.display = "block";
+          document.querySelector(".preloader-wrapper").style.display = "none";
+        }, 2000);
+      };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+    "name": "Website Bola Ku",
+    "short_name": "Bola Ku",
+    "description": "Website PWA Bola Ku",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#7cb342",
+    "theme_color": "#7cb342",
+    "gcm_sender_id": "601677733400",
+    "icons": [
+        {
+          "src": "maskable_icon.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "any maskable"
+        },
+        {
+          "src": "maskable_icon2.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "any maskable"
+
+        }
+      ]
+  }
